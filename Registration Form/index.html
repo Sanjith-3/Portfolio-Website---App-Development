@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\Sign up.gif" alt="Animated Image" class="animated-image">
+        </div>
+        <div class="right-side">
+            <div class="form-wrapper">
+                <h2>User Registration</h2>
+                <form id="registrationForm" action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="fullName">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\identification_7094123.png" alt="User Icon" class="icon"> Full Name:
+                        </label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required pattern="[A-Za-z\s]+" title="Name must start with an alphabet and contain only letters and spaces.">
+                        <small class="error-message" id="nameError">Name must contain only letters and spaces.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\envelope_7094186.png" alt="Email Icon" class="icon"> Email:
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <small class="error-message" id="emailError">Please enter a valid email address.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\telephone_7094184.png" alt="Phone Icon" class="icon"> Phone Number:
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Phone number must be exactly 10 digits.">
+                        <small class="error-message" id="phoneError">Phone number must be 10 digits.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateOfBirth">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\planner_8836132.png" alt="Calendar Icon" class="icon"> Date of Birth:
+                        </label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\password_9477410.png" alt="Password Icon" class="icon"> Password:
+                        </label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" title="Password must be at least 8 characters long.">
+                        <small class="error-message" id="passwordError">Password must be at least 8 characters long.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\password_9477410.png" alt="Confirm Password Icon" class="icon"> Confirm Password:
+                        </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required minlength="8" title="Password must be at least 8 characters long.">
+                        <small class="error-message" id="confirmPasswordError">Passwords do not match.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-animation" class="hidden">
+        <img src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\system-solid-31-check.gif" alt="Registration Completed" class="success-vector">
+        <p>Registration Completed Successfully!</p>
+    </div>
+
+    <script src="C:\College\Classroom\5-SEMESTER\APP DEVELOPMENT\EXP - 2\script.js"></script>
+</body>
+</html>
