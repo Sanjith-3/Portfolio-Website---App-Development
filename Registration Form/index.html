@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Registration Form/style.css">
 </head>
 <body>
     <div class="container">
         <div class="left-side">
-            <img src="Sign up.gif" alt="Animated Image" class="animated-image">
+            <img src="Registration Form/Sign up.gif" alt="Animated Image" class="animated-image">
         </div>
         <div class="right-side">
             <div class="form-wrapper">
@@ -17,7 +17,7 @@
                 <form id="registrationForm" action="submit_form.php" method="post">
                     <div class="form-group">
                         <label for="fullName">
-                            <img src="User.png" alt="User Icon" class="icon"> Full Name:
+                            <img src="Registration Form/User.png" alt="User Icon" class="icon"> Full Name:
                         </label>
                         <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required pattern="[A-Za-z\s]+" title="Name must start with an alphabet and contain only letters and spaces.">
                         <small class="error-message" id="nameError">Name must contain only letters and spaces.</small>
@@ -25,7 +25,7 @@
 
                     <div class="form-group">
                         <label for="email">
-                            <img src="Mail.png" alt="Email Icon" class="icon"> Email:
+                            <img src="Registration Form/Mail.png" alt="Email Icon" class="icon"> Email:
                         </label>
                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         <small class="error-message" id="emailError">Please enter a valid email address.</small>
@@ -33,7 +33,7 @@
 
                     <div class="form-group">
                         <label for="phone">
-                            <img src="Phone.png" alt="Phone Icon" class="icon"> Phone Number:
+                            <img src="Registration Form/Phone.png" alt="Phone Icon" class="icon"> Phone Number:
                         </label>
                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Phone number must be exactly 10 digits.">
                         <small class="error-message" id="phoneError">Phone number must be 10 digits.</small>
@@ -41,14 +41,14 @@
 
                     <div class="form-group">
                         <label for="dateOfBirth">
-                            <img src="Planner.png" alt="Calendar Icon" class="icon"> Date of Birth:
+                            <img src="Registration Form/Planner.png" alt="Calendar Icon" class="icon"> Date of Birth:
                         </label>
                         <input type="date" id="dateOfBirth" name="dateOfBirth" required>
                     </div>
 
                     <div class="form-group">
                         <label for="password">
-                            <img src="Password.png" alt="Password Icon" class="icon"> Password:
+                            <img src="Registration Form/Password.png" alt="Password Icon" class="icon"> Password:
                         </label>
                         <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" title="Password must be at least 8 characters long.">
                         <small class="error-message" id="passwordError">Password must be at least 8 characters long.</small>
@@ -56,7 +56,7 @@
 
                     <div class="form-group">
                         <label for="confirmPassword">
-                            <img src="Password.png" alt="Confirm Password Icon" class="icon"> Confirm Password:
+                            <img src="Registration Form/Password.png" alt="Confirm Password Icon" class="icon"> Confirm Password:
                         </label>
                         <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required minlength="8" title="Password must be at least 8 characters long.">
                         <small class="error-message" id="confirmPasswordError">Passwords do not match.</small>
@@ -71,10 +71,10 @@
     </div>
 
     <div id="success-animation" class="hidden">
-        <img src="Check.gif" alt="Registration Completed" class="success-vector">
+        <img src="Registration Form/Check.gif" alt="Registration Completed" class="success-vector">
         <p>Registration Completed Successfully!</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="Registration Form/script.js"></script>
 </body>
 </html>
