@@ -6,17 +6,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    backdrop-filter: blur(10px);
 }
 
 .container {
     display: flex;
     width: 90%;
     max-width: 1200px;
-    background-color: #faeef8;
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     overflow: hidden;
+    backdrop-filter: blur(10px);
     animation: fadeInContainer 1s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 @keyframes fadeInContainer {
@@ -32,10 +35,11 @@ body {
 
 .left-side {
     flex: 1;
-    background-color: #f8bbe9;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(10px);
 }
 
 .left-side .animated-image {
@@ -56,6 +60,8 @@ body {
 .right-side {
     flex: 1;
     padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .form-wrapper {
@@ -104,12 +110,15 @@ h2 {
     transition: opacity 0.3s;
 }
 
-.form-group input {
+.form-group input,
+.form-group div {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: border-color 0.3s, box-shadow 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .form-group input:focus {
@@ -141,27 +150,4 @@ input[type="submit"]:hover {
     box-shadow: 0 10px 20px rgba(240, 98, 146, 0.3);
 }
 
-input[type="submit"]:active {
-    transform: scale(0.98);
-}
-
-#success-animation {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    z-index: 999;
-}
-
-#success-animation img {
-    width: 100px;
-}
-
-.hidden {
-    display: none;
-}
+input[type="
