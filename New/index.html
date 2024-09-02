@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarthBridge | Nature Community</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="6344301-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="text-section">
+    <div class="line"></div>
+    <h1>Welcome to EarthBridge</h1>
+    <p>EarthBridge is a vibrant community dedicated to nature enthusiasts and environmental advocates. Join us to connect with like-minded individuals, share your experiences, and explore the wonders of the natural world. Discover tips for sustainable living, participate in conservation efforts, and foster a deeper connection with our planet.</p>
+    <div class="line"></div>
+  </div>
+  
+  
+  <div class="perspective-container">
+    <div class="wrapper" id="wrapper">
+      <!-- Login Form -->
+      <form action="#" class="form" id="loginForm">
+        <h2>Login to EarthBridge</h2>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Enter your email</label>
+        </div>
+
+        <div class="input-field">
+          <input type="password" required>
+          <label>Enter your password</label>
+        </div>
+
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember">
+            <p>Remember me</p>
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit">Log In</button>
+        <div class="register">
+          <p>Don't have an account? <a href="#" onclick="showSignup()">Register</a></p>
+        </div>
+      </form>
+
+      <!-- Updated Signup Form -->
+      <form action="#" class="form" id="signupForm">
+        <h2>Join EarthBridge</h2>
+        <div class="user-details">
+          <div class="input-field">
+            <input type="text" required>
+            <label>Enter your full name</label>
+          </div>
+
+          <div class="input-field">
+            <input type="text" required>
+            <label>Enter your username</label>
+          </div>
+
+          <div class="input-field">
+            <input type="email" required>
+            <label>Enter your email</label>
+          </div>
+
+          <div class="input-field">
+            <input type="text" required>
+            <label>Enter your phone number</label>
+          </div>
+
+          <div class="input-field">
+            <input type="password" required>
+            <label>Choose a password</label>
+          </div>
+
+          <div class="input-field">
+            <input type="password" required>
+            <label>Confirm your password</label>
+          </div>
+        </div>
+
+        <div class="gender-details">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+              <input type="radio" name="gender" id="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <input type="radio" name="gender" id="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        
+        <button type="submit">Sign Up</button>
+        <div class="register">
+          <p>Already have an account? <a href="#" onclick="showLogin()">Log In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  const loginForm = document.getElementById('loginForm');
+  const signupForm = document.getElementById('signupForm');
+  const wrapper = document.getElementById('wrapper');
+
+  function showSignup() {
+    loginForm.style.display = 'none';
+    signupForm.style.display = 'block';
+    wrapper.classList.add('rotate-box'); // Apply rotation animation
+  }
+  
+  function showLogin() {
+    signupForm.style.display = 'none';
+    loginForm.style.display = 'block';
+    wrapper.classList.remove('rotate-box'); // Remove rotation animation
+  }
+
+  showLogin();
+</script>
+</html>
